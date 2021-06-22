@@ -43,6 +43,7 @@ const render = () => {
 // Render once with the initial state.
 render();
 // Subscribe render to changes to the store's state.
+store.subscribe(render);
 
 function CounterApp(props) {
   let state = props.state;
@@ -62,5 +63,3 @@ function CounterApp(props) {
     </div>
   )
 }
-
-store.subscribe(render);
